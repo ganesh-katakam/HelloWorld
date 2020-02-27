@@ -1,5 +1,3 @@
-// Powered by Infostretch 
-
 timestamps {
 
 node ('Slave1') { 
@@ -10,8 +8,6 @@ node ('Slave1') {
 	stage ('PRbuild - Build') {
  			// Shell build step
 sh """ 
-git clone https://github.com/ganesh-katakam/HelloWorld.git
-cd HelloWorld
 javac Hello.java
 java Hello
 cd ../
